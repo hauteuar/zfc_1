@@ -1,0 +1,111 @@
+    .overlaySection {
+        background-color: #f8f9fa;
+        padding: -90px 0;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .countersContainer {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        max-width: 1200px;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 20px 0;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .counterBox {
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .counterBox h3 {
+        font-size: 3rem;
+        color: #ff4136;
+        margin: 0;
+    }
+
+    .counterBox p {
+        font-size: 1.2rem;
+        color: #5a5a5a;
+        margin-top: 10px;
+    }
+
+    /* Book an Appointment Section */
+    .bookAppointmentSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #001f3f;
+        padding: 100px 0;
+    }
+
+    .bookAppointmentContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .bookAppointmentImage {
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
+
+    .appointmentForm {
+        width: 40%;
+        background-color: #ff4136;
+        border-radius: 20px;
+        padding: 40px;
+        color: #fff;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .appointmentForm h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .appointmentForm select,
+    .appointmentForm input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+    }
+
+    .appointmentForm select {
+        background-color: #fff;
+    }
+
+    .appointmentForm input {
+        background-color: #fff;
+    }
+
+    .appointmentForm button {
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+        color: #ff4136;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .appointmentForm button:hover {
+        background-color: #001f3f;
+        color: #fff;
+    }

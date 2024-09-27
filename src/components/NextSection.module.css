@@ -1,0 +1,405 @@
+/* General Next Section */
+.nextSection {
+    background: url('../assets/images/mountain.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* Left Content - Consultation and Client Info */
+.leftContent {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: url('../assets/images/student.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px 20px;
+    border-radius: 15px;
+    overflow: visible;
+}
+
+.consultationBox {
+    background-color: #ff4136;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px; /* Reduced size */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: -110px; /* Adjusted for responsive */
+    transition: transform 0.3s ease-in-out;
+}
+
+.consultationBox:hover {
+    transform: scale(1.05);
+}
+
+.consultationBox p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.consultationBox span {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.servedClient {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    top: 130px;
+    left: -110px;
+    width: 180px; /* Reduced size */
+}
+
+.servedClient h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.counter {
+    font-size: 2.5rem;
+    color: #001f3f;
+    font-weight: bold;
+    position: relative;
+}
+
+.counterContainer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.semiCircle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 31, 63, 0.1);
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: fillSemiCircle 3s ease forwards;
+}
+
+@keyframes fillSemiCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* Right Content - About Company Section */
+.rightContent {
+    flex: 1;
+    padding-left: 30px; /* Reduced padding */
+    color: #001f3f;
+    animation: slideIn 1.5s ease-in-out;
+    z-index: 2;
+    position: relative;
+    padding: 25 px;
+}
+
+.aboutCompany {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1rem;
+    color: #001f3f;
+    text-transform: uppercase;
+    padding-top: 75px ;
+}
+
+.aboutCompany i {
+    margin-right: 10px;
+    color: #ff4136;
+    font-size: 1.3rem;
+}
+
+.rightContent h2 {
+    font-size: 2.5rem; /* Reduced font size */
+    margin-bottom: 20px;
+}
+
+.rightContent p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.pathwaySection {
+    font-size: 1.2rem;
+    color: #0056b3;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.textwhite{
+    color: white;
+}
+
+.featuresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.featuresList li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ff4136;
+    display: flex;
+    align-items: center;
+}
+
+/* Get Started Button */
+.getStartedBtn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff4136;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.getStartedBtn:hover {
+    background-color: #001f3f;
+}
+
+/* ZFC text with Paper Plane Icon */
+.zfcText {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.zfcText i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: red; /* Paper plane in red */
+}
+
+.zfcText h3 span {
+    font-size: 1.8rem;
+    color: red; /* ZFC in red */
+    font-weight: bold;
+}
+
+.zfcText h3 {
+    color: white; /* The rest of the text is white */
+}
+
+/* Overlay Section */
+.overlaySection {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px 0;
+    margin-top: -90px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30px); /* Overlay between next section and overlay section */
+}
+
+.countersContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.counterBox {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 200px; /* Make the boxes flex to fit smaller screens */
+}
+
+.counterBox h3 {
+    font-size: 2.5rem; /* Reduced size */
+    color: #ff4136;
+    margin: 0;
+}
+
+.counterBox p {
+    font-size: 1rem;
+    color: #5a5a5a;
+    margin-top: 10px;
+}
+
+/* Book an Appointment Section */
+.bookAppointmentSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f;
+    color: #fff;
+    padding: 100px 0;
+    margin-top: -200px;
+}
+
+.bookAppointmentContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.bookAppointmentImage {
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.appointmentFormWrapper {
+    width: 45%;
+    padding: 50px;
+    color: white;
+}
+
+.appointmentForm {
+    background-color: #ff4136;
+    border-radius: 15px;
+    padding: 40px;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.appointmentForm h3 {
+    font-size: 2rem; /* Reduced font size */
+    margin-bottom: 20px;
+}
+
+.appointmentForm input,
+.appointmentForm select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    padding: 10px 5px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.appointmentForm button {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: #ff4136;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.appointmentForm button:hover {
+    background-color: #001f3f;
+    color: #fff;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rightContent, .leftContent {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .consultationBox, .servedClient {
+        width: 100%;
+        left: 0;
+        position: relative;
+        margin-bottom: 10px;
+        
+    }
+
+    .bookAppointmentContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bookAppointmentImage, .appointmentFormWrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .getStartedBtn {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Make inline fields stack on top of each other on small screens */
+    .inlineFields {
+        flex-direction: column;
+        color: white;
+    }
+
+    .inlineFields input {
+        width: 100%;
+        color: white;
+    }
+
+    /* Adjust for smaller screens */
+    .zfcText {
+        position: relative;
+        top: -20px;
+        color: white;
+    }
+
+    .counterBox h3 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row; /* Default layout for larger screens */
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #f0f8ff;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  background-color: #ffffff;
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabButton:hover {
+  background-color: #e6f7ff;
+}
+
+.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.content {
+  width: 80%;
+  padding: 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.tabContent h3 {
+  font-size: 2em;
+  color: #4a90e2;
+}
+
+.tabContent p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack sidebar on top of content for tablets */
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    box-shadow: none; /* Remove shadow for stacked layout */
+    padding: 10px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabButton {
+    font-size: 1em; /* Adjust button font size for smaller screens */
+    padding: 8px;
+  }
+
+  .tabContent h3 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+
+  .tabContent p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 10px; /* Reduce padding for smaller devices */
+  }
+
+  .tabButton {
+    font-size: 0.9em; /* Further reduce button font size for mobile */
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .tabContent h3 {
+    font-size: 1.3em;
+  }
+
+  .tabContent p {
+    font-size: 0.9em;
+  }
+}

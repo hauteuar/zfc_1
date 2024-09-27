@@ -1,0 +1,18 @@
+/* Scroll-to-top Arrow */
+.scrollTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #d92b27;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .scrollTop:hover {
+    background-color: #c81f20;
+  }
+  

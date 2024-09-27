@@ -1,0 +1,228 @@
+/* Top Bar Styling */
+.topBar {
+    background-color: #d92b27;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*position: relative; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+    position: relative;
+    bottom: -10px; /* Overlay effect after the header box */
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactInfo .address, .contactInfo .phone {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.contactInfo i {
+    margin-right: 5px;
+}
+
+.verticalLine {
+    width: 1px;
+    height: 40px;
+    background-color: white;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+}
+
+.socialLinks a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.socialLinks a:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Trailer Section */
+.trailerSection {
+    background-image: url('../assets/images/worldmap.jpg'); /* Add your world map image here */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Services Section */
+.servicesSection {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.servicesSection h3 {
+    color: #d92b27;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.servicesSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.servicesSection ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.servicesSection ul li i {
+    color: #d92b27;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Appointment Section */
+.appointmentSection {
+    flex: 2;
+    margin: 0 20px;
+}
+
+.appointmentSection h3 {
+    color: #d92b27;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border-color: #d92b27;
+}
+
+textarea {
+    resize: none;
+}
+
+.submitBtn {
+    background-color: #d92b27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submitBtn:hover {
+    background-color: #c81f20;
+}
+
+/* About Us Section */
+.aboutSection {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.aboutSection h3 {
+    color: #d92b27;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.aboutSection p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.aboutSection a {
+    color: #d92b27;
+}
+
+.contactBtn {
+    display: inline-block;
+    background-color: #d92b27;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contactBtn i {
+    margin-right: 10px;
+}
+
+.contactBtn:hover {
+    background-color: #c81f20;
+}
+
+/* Fix for contact button text visibility */
+.contactBtn {
+    background-color: #d92b27;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.contactBtn:hover {
+    background-color: #c81f20;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .servicesSection, .appointmentSection, .aboutSection {
+      margin: 20px 0;
+    }
+
+    .formGroup {
+      flex-direction: column;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+    }
+}

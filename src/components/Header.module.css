@@ -1,0 +1,215 @@
+/* Global styles */
+.header {
+   /* position: sticky; 
+   */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    transition: top 0.3s ease;
+}
+
+.headerVisible {
+    top: 0;
+}
+
+.headerHidden {
+    top: -100px; /* Hide header when scrolling down */
+}
+
+/* Header Top (Social Media and Contact Info) */
+.headerTop {
+    background-color: #001f3f;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.headerTopContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialMedia a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Contact Details */
+.contactDetails {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contactDetails i {
+    margin-right: 5px;
+    color: #ff4136;
+}
+
+.email, .address, .phoneNumber {
+    color: white;
+    text-decoration: none;
+}
+
+/* Logo Section */
+.logosSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.firmLogo {
+    height: 90px;
+}
+
+.rcicLogo {
+    height: 90px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    flex-direction: row;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #001f3f;
+    
+    font-size: 10px;    
+    font-weight: bold;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+    
+
+}
+
+.navLinks a:hover {
+    background-color: #001f3f;
+    color: white;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdownToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #001f3f;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.dropdownMenu li {
+    padding: 10px 15px;
+}
+
+.dropdownMenu li a {
+    color: #001f3f;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+.navLinks.open {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .headerTop {
+        flex-direction: column;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .headerTopContent {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .socialMedia {
+        display: none;
+    }
+
+    .contactDetails {
+        justify-content: center;
+    }
+
+    .logosSection {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .firmLogo {
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .rcicLogo {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navLinks.open {
+        display: flex;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+}

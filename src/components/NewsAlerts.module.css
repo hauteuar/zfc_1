@@ -1,0 +1,162 @@
+/* News Alerts Section with World Map Background */
+.newsAlerts {
+  padding: 50px 0;
+  background-image: url('../assets/images/worldmap.jpg'); /* Add your world map image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+/* Adjust the section heading */
+.newsAlerts h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #001f3f;
+  z-index: 1;
+  position: relative;
+}
+
+/* Cards with light red background and diagonal cross */
+.newsCard,
+.adCard {
+  background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect for cards */
+.newsCard:hover,
+.adCard:hover {
+  transform: translateY(-10px);
+}
+
+/* Diagonal cross on the card */
+.newsCard::before,
+.adCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(35deg, transparent 47%, rgba(255, 0, 0, 0.3) 47%, rgba(255, 0, 0, 0.3) 53%, transparent 53%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.imageContainer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure images are properly sized */
+.imageContainer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.newsCard .content {
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.newsCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #001f3f;
+}
+
+.newsCard p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  color: #001f3f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 1024px) {
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .newsCard,
+  .adCard {
+    width: 90%;
+  }
+
+  .newsAlerts h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .newsCard,
+  .adCard {
+    width: 90%;
+  }
+
+  .newsAlerts h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .newsCard,
+  .adCard {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .newsAlerts h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .newsCard p {
+    font-size: 0.9rem;
+  }
+
+  .readMore {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,163 @@
+.container {
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+.pageTitle {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.newsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.articleCard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.articleContent {
+  padding: 10px;
+}
+
+.articleContent h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.articleContent p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.readMoreBtn {
+  background-color: #4a90e2;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  background-color: #357ABD;
+}
+
+.adsContainer {
+  margin-top: 40px;
+}
+
+.adsContainer h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 3-4 ads per row */
+  gap: 20px;
+}
+
+.adCard {
+  cursor: pointer;
+}
+
+.adImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.adCard:hover .adImage {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Zoomed ad image inside the modal */
+.zoomedAdImage {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem; /* Adjust the title size for tablets and smaller screens */
+  }
+
+  .newsContainer {
+    grid-template-columns: 1fr; /* Single column layout for articles on smaller screens */
+  }
+
+  .articleCard {
+    padding: 15px; /* Reduce padding for smaller devices */
+  }
+
+  .articleContent h2 {
+    font-size: 1.2rem; /* Reduce article title size for smaller screens */
+  }
+
+  .adsContainer h2 {
+    font-size: 1.5rem; /* Adjust heading size for ads section */
+  }
+
+  .adGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Smaller ad layout for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 1.8rem; /* Further reduce title size for phones */
+  }
+
+  .newsContainer {
+    grid-template-columns: 1fr; /* Ensure single-column layout on small devices */
+  }
+
+  .articleImage {
+    height: 120px; /* Smaller article image on mobile */
+  }
+
+  .articleContent h2 {
+    font-size: 1rem; /* Further reduce title size */
+  }
+
+  .readMoreBtn {
+    padding: 8px; /* Smaller button for mobile */
+  }
+
+  .adGrid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Smaller ad layout for mobile */
+  }
+
+  .adImage {
+    width: 80px; /* Smaller ad images for mobile screens */
+  }
+
+  .zoomedAdImage {
+    max-width: 100%; /* Ensure zoomed image takes full width on mobile */
+  }
+}

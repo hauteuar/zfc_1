@@ -1,0 +1,165 @@
+.firmProfilePage {
+  padding: 20px;
+  color: white;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+/* Light background with dark text */
+.lightBackground {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Dark background with white text */
+/* Dark background with enforced white text */
+.darkBackground {
+  background-color: #333;
+  color: white !important; /* Ensure all text is white */
+}
+
+/* Force all headings and paragraphs to be white in dark background */
+.darkBackground h2,
+.darkBackground p {
+  color: white !important; /* Enforce white text for headings and paragraphs */
+}
+
+/* Light background with dark text */
+.lightBackground {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* White background with default text */
+.whiteBackground {
+  background-color: white;
+  color: #333;
+}
+
+/* Custom background with white text */
+.customBackground {
+  background-color: #004aad;
+  color: white;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+.textContainer {
+  width: 65%;
+  padding-right: 20px;
+}
+
+/* Image container */
+.imageContainer {
+  width: 30%;
+  text-align: center;
+}
+
+.resizedImage {
+  width: 100%;
+  max-width: 350px; /* Limits the image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Counter styles */
+
+.counterContainerSmall {
+  background-color: #004aad;
+  color: white !important; /* Ensure text inside the counter is white */
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.counterContainerSmall p {
+  color: white !important; /* Ensure white text for the paragraph */
+}
+
+.counterSmall {
+  font-size: 28px;
+  font-weight: bold;
+  color: white !important; /* Ensure the number is white */
+}
+
+/* Section headings */
+.sectionHeading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Text box styling */
+.textBox {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Accordion container and items */
+.accordionContainer {
+  margin-top: 20px;
+}
+
+.accordionItem {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordionTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.accordionIcon {
+  font-size: 18px;
+  color: #cc0000;
+}
+
+.accordionContent {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column; /* Stack text and images on smaller screens */
+  }
+
+  .textContainer,
+  .imageContainer {
+    width: 100%; /* Full width for mobile */
+    text-align: center;
+  }
+
+  .textContainer {
+    padding-right: 0; /* Remove right padding on smaller screens */
+  }
+
+  .sectionHeading {
+    font-size: 28px; /* Slightly smaller font on mobile */
+  }
+}

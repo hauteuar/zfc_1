@@ -1,0 +1,99 @@
+.services-carousel .service-card {
+    position: relative;
+    background: #ffcccc; /* Light red background */
+    border: 2px solid #001f3f;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    min-height: 250px;
+    overflow: hidden; /* Ensure content doesn't overflow the shape */
+    margin: 10px; /* Add space between the cards */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background-color: white;
+    transform: rotate(-35deg); /* Creates the diagonal rhombus/rectangle effect */
+    z-index: 0; /* Ensure it is behind the content */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 60px;
+    color: #ff4136;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1; /* Bring content in front of the pseudo-element */
+}
+
+.service-title {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #001f3f;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.service-description {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.read-more-link {
+    color: #ff4136;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.read-more-link:hover {
+    color: #d93232;
+}
+
+@media (max-width: 1024px) {
+    .service-card {
+        width: 85%;
+        margin: 20px auto; /* Center and add margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 40px 0;
+    }
+
+    .service-card {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .service-description {
+        font-size: 1.1rem;
+    }
+
+    .service-title {
+        font-size: 1.6rem;
+    }
+
+    .read-more-link {
+        font-size: 1rem;
+    }
+}

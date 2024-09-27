@@ -1,0 +1,61 @@
+.footer {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footerLinks a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footerLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .closeButton {
+    background-color: #d92b27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    background-color: #c81f20;
+  }
+  
