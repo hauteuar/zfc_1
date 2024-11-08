@@ -69,11 +69,11 @@ const Header = () => {
                         <a href="/immigration-category" className="dropdown-toggle">IMMIGRATION CATEGORY</a>
                         {showImmigrationDropdown && (
                             <div className="dropdown-menu">
-                                <a href="/express-entry">Express Entry</a>
-                                <a href="/study-permit">Study Permit</a>
-                                <a href="/family-visa">Family Visa</a>
-                                <a href="/pnp">Provincial Nominee Program (PNP)</a>
-                                <a href="/visitor">Visitor Visa</a>
+                                <a href="/immigration-category/express-entry">Express Entry</a>
+                                <a href="/immigration-category/study-permit">Study Permit</a>
+                                <a href="/immigration-category/family-visa">Family Visa</a>
+                                <a href="/immigration-category/pnp">Provincial Nominee Program (PNP)</a>
+                                <a href="/immigration-category/visitor">Visitor Visa</a>
                             </div>
                         )}
                     </div>
