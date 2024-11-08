@@ -3,6 +3,7 @@ import { FaUserCheck, FaGlobe, FaBook, FaFileAlt, FaMapMarkerAlt, FaPassport } f
 import { useParams } from 'react-router-dom';
 import styles from './ImmigrationPage.module.css';
 import placeholderImage from '../assets/images/visa2.jpg'; // Placeholder image
+import visa3 from '../assets/images/visa3.jpg';
 
 const ImmigrationPage = () => {
   const { section } = useParams(); // Extract the section parameter from the URL
@@ -84,7 +85,7 @@ const ImmigrationPage = () => {
             </ul>
             {/* Image at the end of the section */}
             <div className={styles.imageContainer}>
-              <img src={placeholderImage} alt="Express Entry Process" className={styles.smallImage} />
+              <img src={visa3} alt="Express Entry Process" className={styles.smallImage} />
             </div>
 
             {/* 3rd Section: Requirements */}
@@ -139,7 +140,7 @@ const ImmigrationPage = () => {
             </ul>
             {/* Image at the end of the section */}
             <div className={styles.imageContainer}>
-              <img src={placeholderImage} alt="PNP Process" className={styles.smallImage} />
+              <img src={visa3} alt="PNP Process" className={styles.smallImage} />
             </div>
 
             {/* 3rd Section: Service Options */}
@@ -191,7 +192,7 @@ These are the concepts that shape our distinctive culture & differentiate us fro
             </ul>
             {/* Image at the end of the section */}
             <div className={styles.imageContainer}>
-              <img src={placeholderImage} alt="PNP Process" className={styles.smallImage} />
+              <img src={visa3} alt="PNP Process" className={styles.smallImage} />
             </div>
 
             {/* 3rd Section: Service Options */}
@@ -280,7 +281,7 @@ These are the concepts that shape our distinctive culture & differentiate us fro
               <li>We care about each other and the world around us.</li>
             </ul>
             <div className={styles.imageContainer}>
-              <img src={placeholderImage} alt="Family Visa Process" className={styles.smallImage} />
+              <img src={visa3} alt="Family Visa Process" className={styles.smallImage} />
             </div>
 
             {/* Service Options */}

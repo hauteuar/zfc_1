@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Correct import for Routes in React Router v6
 import '@fortawesome/fontawesome-free/css/all.min.css'; // FontAwesome for icons
 import Home from './pages/Home';
+//import Hero from './components/Hero';
 import Services from './components/Services';
 import BusinessVisaPage from './pages/BusinessVisaPage';
 import Footer from './components/Footer'; // Import the Footer component
@@ -18,6 +19,8 @@ import FreeAssessmentPage from './components/FreeAssessmentPage';
 import ConsultationPage from './components/ConsultationPage';
 import AdminPage from './components/AdminPage';
 import ContactUsPage from './components/ContactUsPage';
+import ServicesPage from './pages/ServicesPage';
+import HeaderPage from './components/HeaderPage';
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -44,19 +47,21 @@ function App() {
     <Router>
       <div className="App">
         {/* Main app content with routes */}
-        <Head />
+        <HeaderPage />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/services" element={<Services />} />
+          <Route exact path="/servicespage" element={<ServicesPage />} />
           <Route exact path="/firm-profile" element={<FirmProfile />} />
           <Route exact path="/irb" element={<IRBPage />} />
 
           <Route path="/startup-visa" element={<StartupVisaPage />} />
           <Route exact path="/immigration-category/:section" element={<ImmigrationPage />} />
+          <Route exact path="/immigration-category" element={<ImmigrationPage />} />
           <Route path="/business-visa" element={<BusinessVisa />} />
         <Route path="/business-visa/investor-program" element={<BusinessVisa />} />
-        <Route path="/business-visa/selfemployed-program" element={<BusinessVisa />} />
-        <Route path="/business-visa/entrepreneur-program" element={<BusinessVisa />} />
+        <Route path="/business-visa/self-employed" element={<BusinessVisa />} />
+        <Route path="/business-visa/entrepreneur-applicant" element={<BusinessVisa />} />
         <Route path="/news" element={<NewsAlertsPage />} />
         <Route path="/free-assessment" element={<FreeAssessmentPage />} />
         <Route path="/consultation" element={<ConsultationPage />} />

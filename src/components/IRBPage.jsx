@@ -12,7 +12,7 @@ const IRBPage = () => {
       <section className={styles.content}>
         <h1>Immigration and Refugee Board of Canada (IRB)</h1>
         <p>
-          Sufian Ahmed is a Regulated Canadian Immigration Consultant (RCIC) and a member of good standing with the College of Immigration and Citizenship Consultants (CICC).
+         <strong> Sufian Ahmed is a Regulated Canadian Immigration Consultant (RCIC)</strong> and a member of good standing with the College of Immigration and Citizenship Consultants (CICC).
         </p>
         <p>
           The Immigration and Refugee Board of Canada (IRB) is Canada’s largest independent administrative tribunal, tasked with adjudicating immigration and refugee matters. The IRB ensures that decisions are made efficiently, fairly, and in compliance with the law. Among its primary responsibilities is determining who qualifies for refugee protection among the thousands of claimants who seek asylum in Canada each year.

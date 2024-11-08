@@ -1,6 +1,7 @@
 .container {
   display: flex;
   height: 100vh;
+  padding: 200px;
   flex-direction: row; /* Default layout for larger screens */
 }
 

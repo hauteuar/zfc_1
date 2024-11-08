@@ -1,0 +1,28 @@
+.services-page {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tab:hover, .tab.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+}

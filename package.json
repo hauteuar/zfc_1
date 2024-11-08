@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/styled-engine": "^6.1.6",
     "@vibrant/core": "^3.2.1-alpha.1",
     "@vibrant/image": "^3.2.1-alpha.1",
     "autoplay": "^0.0.4",
