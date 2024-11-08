@@ -66,7 +66,7 @@ const Header = () => {
                         onMouseEnter={() => setShowImmigrationDropdown(true)}
                         onMouseLeave={() => setShowImmigrationDropdown(false)}
                     >
-                        <a href="#" className="dropdown-toggle">IMMIGRATION CATEGORY</a>
+                        <a href="/immigration-category" className="dropdown-toggle">IMMIGRATION CATEGORY</a>
                         {showImmigrationDropdown && (
                             <div className="dropdown-menu">
                                 <a href="/express-entry">Express Entry</a>
