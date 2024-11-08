@@ -15,7 +15,7 @@ const slides = [
     {
         bgImage: background1,
         captionPart1: 'IMMIGRATION EXPERTS',
-        captionPart2: 'WITH 18+ YEARS OF EXPERIENCE',
+        captionPart2: 'WITH 25+ YEARS OF EXPERIENCE',
         overlayImages: [{ src: image2, style: { right: '2%', top: '40%' } }]
     },
     {
