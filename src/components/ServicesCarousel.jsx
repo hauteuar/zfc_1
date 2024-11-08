@@ -125,6 +125,10 @@ const ServicesCarousel = () => {
       slidesPerView: 1,
       spaceBetween: 20,
     },
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
   }}
   className="services-carousel"
 >

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../Styles/Header.css';
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaEnvelope, FaPhone, FaSms, FaPhoneAlt } from 'react-icons/fa';
 import zfclogo from '../assets/images/logo_zfc.jpeg';
 import rciclogo from '../assets/images/rcic.jpg';
 
@@ -11,9 +11,8 @@ const Header = () => {
     const [showImmigrationDropdown, setShowImmigrationDropdown] = useState(false);
     const [showBusinessDropdown, setShowBusinessDropdown] = useState(false);
 
-    // Get the current route location
     const location = useLocation();
-    const isHeroPage = location.pathname === '/'; // Adjust if HeroPage route is different
+    const isHeroPage = location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,9 +29,14 @@ const Header = () => {
             {/* Top rounded info bar */}
             <div className={`info-bar ${isScrolled ? 'hidden' : ''}`}>
                 <div className="info-left">
-                    <FaEnvelope /> <a href="mailto:info@zfcanada.com">info@zfcanada.com</a>
+                    <FaEnvelope /> <a href="mailto:info@zfcanada.com" target="_blank" rel="noopener noreferrer">info@zfcanada.com</a>
                 </div>
                 <div className="info-right">
+                    
+                    <div className="phone-icon-container">
+                        <FaPhoneAlt className="phone-icon" />
+                        <span className="phone-number">+1905-858-5589</span>
+                    </div>
                     <a href="https://www.facebook.com/people/Zfcanada-Immigration-Services/61559178020720/" target="_blank" rel="noopener noreferrer">
                         <FaFacebookF />
                     </a>
@@ -41,9 +45,6 @@ const Header = () => {
                     </a>
                     <a href="https://wa.me/19058585589" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp />
-                    </a>
-                    <a href="tel:+19058585589" className="phone-icon" title="Call ZFC">
-                        <FaPhone />
                     </a>
                 </div>
             </div>

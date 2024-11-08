@@ -28,13 +28,13 @@ const slides = [
         bgImage: background3,
         captionPart1: 'IMMIGRATION MADE',
         captionPart2: 'SIMPLE AND EASY',
-        overlayImages: [{ src: image5, style: { top: '50%', left: '60%' } }]
+        overlayImages: [{ src: image4, style: { top: '50%', left: '60%' } }]
     },
     {
         bgImage: background4,
         captionPart1: 'EXPERIENCE &',
         captionPart2: 'DEDICATION',
-        overlayImages: [{ src: image4, style: { left: '3%', bottom: '0%' } }]
+        overlayImages: [{ src: image5, style: { left: '3%', bottom: '0%' } }]
     }
 ];
 

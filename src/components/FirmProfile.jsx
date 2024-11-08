@@ -14,7 +14,7 @@ const FirmProfile = () => {
 
   useEffect(() => {
     const experienceInterval = setInterval(() => {
-      setExperienceCounter((prev) => (prev < 20 ? prev + 1 : prev));
+      setExperienceCounter((prev) => (prev < 25 ? prev + 1 : prev));
     }, 50);
 
     const clientsInterval = setInterval(() => {
