@@ -177,14 +177,7 @@ textarea {
     color: #d92b27;
 }
 
-.contactBtn {
-    display: inline-block;
-    background-color: #d92b27;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
+
 
 .contactBtn i {
     margin-right: 10px;
