@@ -10,10 +10,10 @@ const OverlaySection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (trustedClients < 18000) {
+      if (trustedClients < 19000) {
         setTrustedClients(prevCount => prevCount + 100);
       }
-      if (yearsExperience < 20) {
+      if (yearsExperience < 25) {
         setYearsExperience(prevCount => prevCount + 1);
       }
       if (referrals < 80) {

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../Styles/Header.css';
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaEnvelope, FaPhone, FaSms, FaPhoneAlt } from 'react-icons/fa';
-import zfclogo from '../assets/images/logo_zfc.jpeg';
-import rciclogo from '../assets/images/rcic.jpg';
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import zfclogo from '../assets/images/logo-zfc_1.png';
+import zfclogoWhite from '../assets/images/logo-zfc.png'; // Logo with white background
+import rciclogo from '../assets/images/rcic-logo.png';
+import rciclogoWhite from '../assets/images/rcic.jpg'; // Logo with white background
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +34,6 @@ const Header = () => {
                     <FaEnvelope /> <a href="mailto:info@zfcanada.com" target="_blank" rel="noopener noreferrer">info@zfcanada.com</a>
                 </div>
                 <div className="info-right">
-                    
                     <div className="phone-icon-container">
                         <FaPhoneAlt className="phone-icon" />
                         <span className="phone-number">+1905-858-5589</span>
@@ -50,7 +51,8 @@ const Header = () => {
             </div>
 
             <div className={`header ${isScrolled ? 'scrolled' : ''} ${isHeroPage ? '' : 'red-background'}`}>
-                <img src={zfclogo} alt="ZFC Logo" className="left-logo" />
+                {/* Conditionally render logos based on scroll state */}
+                <img src={isScrolled ? zfclogoWhite : zfclogo} alt="ZFC Logo" className="left-logo" />
 
                 <div className="hamburger" onClick={handleToggleMobileMenu}>
                     ☰
@@ -101,7 +103,8 @@ const Header = () => {
                     <a href="/consultation">CONSULTATION</a>
                 </nav>
 
-                <img src={rciclogo} alt="RCIC Logo" className="right-logo" />
+                {/* Conditionally render right logo based on scroll state */}
+                <img src={isScrolled ? rciclogoWhite : rciclogo} alt="RCIC Logo" className="right-logo" />
             </div>
         </header>
     );

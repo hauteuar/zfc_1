@@ -20,9 +20,9 @@ const slides = [
     },
     {
         bgImage: background2,
-        captionPart1: 'BUILDING YOUR',
-        captionPart2: 'DREAM CAREER',
-        overlayImages: [{ src: image1, style: { left: '2%', top: '50%' } }]
+        captionPart1: `BUILDING YOUR'S &`,
+        captionPart2: 'YOUR FAMILIES FUTURE',
+        overlayImages: [{ src: image1, style: { left: '0%', top: '50%' } }]
     },
     {
         bgImage: background3,

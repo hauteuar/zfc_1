@@ -96,7 +96,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0); /* Transparent initially */
     color: white;
-    padding: 5px 20px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,7 +105,7 @@
 }
 
 .header.red-background {
-    background-color: #d32f2f; /* Red background for non-HeroPage */
+    background-color: #f0c6c6; /* Red background for non-HeroPage */
 }
 
 .header.scrolled {
@@ -116,7 +116,14 @@
 .left-logo, .right-logo {
     width: 150px; /* Increased size */
     height: auto;
-    margin: 0 20px;
+    margin: 0 5px;
+}
+
+.right-logo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    margin: 0 10px; /* Reduced margin to move it closer to the center */
+    transform: translateX(-30px); /* Moves the logo 10px to the left */
 }
 
 .logo {

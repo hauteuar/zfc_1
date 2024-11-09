@@ -7,7 +7,7 @@ const NextSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (count < 18000) {
+      if (count < 19000) {
         setCount(prevCount => prevCount + 100); // Increment by 100 until reaching 18000
       }
     }, 50);
@@ -30,7 +30,7 @@ const NextSection = () => {
               <div className={styles.semiCircle}></div>
               <div className={styles.counter}>{count}+</div>
             </div>
-            <p>We are serving for 20+ Years</p>
+            <p>We are serving for 25+ Years</p>
           </div>
         </div>
 

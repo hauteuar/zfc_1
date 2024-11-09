@@ -56,7 +56,7 @@ const Hero = () => {
               <h2 className="highlight-background">We Speak For You. We Make Law Work For You.</h2>
             </div>
 
-            <h1>IMMIGRATION EXPERTS WITH MORE THAN 20+ YRS OF EXPERIENCE</h1>
+            <h1>IMMIGRATION EXPERTS WITH MORE THAN 25+ YRS OF EXPERIENCE</h1>
             <p className="highlight-background">19,000+ Happy Clients</p>
 
             <motion.a

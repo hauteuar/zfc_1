@@ -99,7 +99,7 @@ const Carousel = () => {
             <p>
               <i className="fas fa-paper-plane"></i> WE SPEAK FOR YOU, WE MAKE THE LAW WORK FOR YOU
             </p>
-            <h1>IMMIGRATION EXPERTS WITH 20+ YEARS OF EXPERIENCE</h1>
+            <h1>IMMIGRATION EXPERTS WITH 25+ YEARS OF EXPERIENCE</h1>
           </div>
         </div>
       </SwiperSlide>

@@ -5,7 +5,7 @@ const IRBPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.highlights}>
-        <div className={styles.experience}>20+ years of experience</div>
+        <div className={styles.experience}>25+ years of experience</div>
         <div className={styles.clients}>19000+ happy clients</div>
       </div>
 

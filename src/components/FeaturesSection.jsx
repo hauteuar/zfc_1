@@ -59,7 +59,7 @@ const FeaturesSection = () => {
           <div className={styles.featureItem}>
             <i className="fas fa-check"></i>
             <h3>Professional & Expert Team</h3>
-            <p>ZFC has more than 20+ years of professional experience and an expert team to address all your needs.</p>
+            <p>ZFC has more than 25+ years of professional experience and an expert team to address all your needs.</p>
           </div>
           <div className={styles.featureItem}>
             <i className="fas fa-check"></i>
