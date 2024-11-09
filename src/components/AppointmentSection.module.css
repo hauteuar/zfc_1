@@ -178,27 +178,27 @@ textarea {
 }
 
 
-
-.contactBtn i {
-    margin-right: 10px;
-}
-
-.contactBtn:hover {
-    background-color: #c81f20;
-}
-
 /* Fix for contact button text visibility */
 .contactBtn {
     background-color: #d92b27;
     color: white;
     display: inline-block;
     padding: 10px 20px;
-    text-decoration: antiquewhite;
+    
+}
+
+.contactBtn i {
+    margin-right: 10px;
+    color: white;
+    
 }
 
 .contactBtn:hover {
     background-color: #c81f20;
+    color: white;
 }
+
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
