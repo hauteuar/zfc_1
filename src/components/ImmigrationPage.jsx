@@ -126,7 +126,7 @@ const ImmigrationPage = () => {
               The Provincial Nominee (PNP) is an option for Canadian Permanent Residence. PNP allows provinces and territories to directly nominate individuals who they wish to immigrate to Canada. Each province has their own unique PNP, tailored to meet specific needs such as skilled workers or individuals with certain attributes.
             </p>
             <p className={`${styles.description} ${styles.highlighted}`}>
-              <strong>Over the last 20 Years we made an impact that is strong & we have a long way to go.</strong>
+              <strong>Over the last 25 Years we made an impact that is strong & we have a long way to go.</strong>
             </p>
 
             {/* 2nd Section: Service Process */}
@@ -176,7 +176,7 @@ const ImmigrationPage = () => {
             We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients’ most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships.
 
             <p className={`${styles.description} ${styles.highlighted}`}>
-              <strong>Over the last 20 Years we made an impact that is strong & we have a long way to go.</strong>
+              <strong>Over the last 25 Years we made an impact that is strong & we have a long way to go.</strong>
             </p>
 These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.
             </p>
@@ -223,7 +223,7 @@ These are the concepts that shape our distinctive culture & differentiate us fro
             We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients’ most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships.
 
             <p className={`${styles.description} ${styles.highlighted}`}>
-              <strong>Over the last 20 Years we made an impact that is strong & we have a long way to go.</strong>
+              <strong>Over the last 25 Years we made an impact that is strong & we have a long way to go.</strong>
             </p>
 These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.
             </p>
@@ -269,7 +269,7 @@ These are the concepts that shape our distinctive culture & differentiate us fro
               This group is admitted to Canada as permanent residents due to their relationship with and sponsorship by a Canadian citizen or permanent resident. Sponsored applicants include spouses, dependent children, parents, and grandparents. Sponsors must provide financial support and prove their ability to support the sponsored family members before approval.
             </p>
             <p className={`${styles.description} ${styles.highlighted}`}>
-              <strong>Over the last 20 Years we made an impact that is strong & we have a long way to go.</strong>
+              <strong>Over the last 25 Years we made an impact that is strong & we have a long way to go.</strong>
             </p>
 
             {/* Family Visa Process */}
@@ -311,7 +311,7 @@ These are the concepts that shape our distinctive culture & differentiate us fro
             We guide our clients through difficult issues, bringing insight and judgment to each situation. Our innovat ive approaches create original solutions to our clients’ most complex domestic & multi juristictional deal s and disputes. By thinking on behalf of our clients every day, we anticipate what they want, provide what they need and build lasting relationships.
             
             <p className={`${styles.description} ${styles.highlighted}`}>
-              <strong>Over the last 20 Years we made an impact that is strong & we have a long way to go.</strong>
+              <strong>Over the last 25 Years we made an impact that is strong & we have a long way to go.</strong>
             </p>
             These are the concepts that shape our distinctive culture & differentiate us from others. They true the unique spirit of our Firm guide the behaviors that enable us to deliver the promises we make to our clients and our people.
             </p>
