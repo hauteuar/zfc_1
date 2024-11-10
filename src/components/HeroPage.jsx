@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../Styles/HeroPage.css';
 import background1 from '../assets/images/background1.jpg';
 import background2 from '../assets/images/background6.avif';
@@ -41,6 +42,7 @@ const slides = [
 const HeroPage = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(true);
+    const navigate = useNavigate(); // Initialize navigate
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -55,6 +57,10 @@ const HeroPage = () => {
 
         return () => clearInterval(interval);
     }, [currentSlide]);
+
+    const handleConsultClick = () => {
+        navigate('/consultation'); // Navigate to /consultation
+    };
 
     return (
         <div className="carousel-container">
@@ -80,7 +86,9 @@ const HeroPage = () => {
                                 <span className="caption-part1">{slide.captionPart1}</span>
                                 <span className="caption-part2">{slide.captionPart2}</span>
                             </div>
-                            <button className="consult-button">ZFCANADA IMMIGRATION</button>
+                            <button className="consult-button" onClick={handleConsultClick}>
+                                ZFCANADA IMMIGRATION
+                            </button>
                         </div>
                         <div className="overlay-container">
                             {slide.overlayImages.map((image, idx) => (
