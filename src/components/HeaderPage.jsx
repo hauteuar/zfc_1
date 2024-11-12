@@ -4,8 +4,8 @@ import '../Styles/Header.css';
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import zfclogo from '../assets/images/logo-zfc_1.png';
 import zfclogoWhite from '../assets/images/logo-zfc.png'; // Logo with white background
-import rciclogo from '../assets/images/rcic-logo.png';
-import rciclogoWhite from '../assets/images/rcic.jpg'; // Logo with white background
+import rciclogo from '../assets/images/RCIC-IRB.png';
+import rciclogoWhite from '../assets/images/RCIC-IRB-1.jpg'; // Logo with white background
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -101,6 +101,7 @@ const Header = () => {
                     <a href="/news">NEWS & ALERTS</a>
                     <a href="/free-assessment">FREE ASSESSMENT</a>
                     <a href="/consultation">CONSULTATION</a>
+                    <a href="/contactus">CONTACT US</a>
                 </nav>
 
                 {/* Conditionally render right logo based on scroll state */}

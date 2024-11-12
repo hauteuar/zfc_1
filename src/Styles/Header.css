@@ -99,6 +99,7 @@
     padding: 5px 10px;
     display: flex;
     align-items: center;
+    font: 0.93em sans-serif;
     justify-content: space-between;
     transition: background-color 0.3s ease, top 0.3s ease;
     z-index: 100;
@@ -141,13 +142,13 @@
 
 .nav {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .nav a {
     color: white;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .dropdown {
