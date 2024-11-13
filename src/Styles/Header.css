@@ -258,13 +258,77 @@
         left: 5px;
     }
     .left-logo, .right-logo {
-        width: 110px; /* Increased size */
+        width: 100px; /* Increased size */
         height: auto;
         margin: 0 5px;
     }
     
     .right-logo {
-        width: 110px; /* Adjust as needed */
+        width: 100px; /* Adjust as needed */
+        height: auto;
+        margin: 0 10px; /* Reduced margin to move it closer to the center */
+        transform: translateX(-10px); /* Moves the logo 10px to the left */
+    }
+    
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .header {
+        font-size: 0.75em; /* Slightly smaller font for 1200px screens */
+    }
+    .header.scrolled {
+        background-color: #d32f2f; /* Red when scrolled */
+        font: 0.7em sans-serif;
+        top: 0;
+        left: 5px;
+    }
+    .left-logo, .right-logo {
+        width: 100px; /* Increased size */
+        height: auto;
+        margin: 0 5px;
+    }
+    
+    .right-logo {
+        width: 100px; /* Adjust as needed */
+        height: auto;
+        margin: 0 8px; /* Reduced margin to move it closer to the center */
+        transform: translateX(-30px); /* Moves the logo 10px to the left */
+    }
+    
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    .header {
+        font-size: 0.78em; /* Slightly smaller font for 1200px screens */
+    }
+    .header.scrolled {
+        background-color: #d32f2f; /* Red when scrolled */
+        font: 0.78em sans-serif;
+        top: 0;
+        left: 5px;
+    }
+    .left-logo, .right-logo {
+        width: 100px; /* Increased size */
+        height: auto;
+        margin: 0 5px;
+    }
+    
+    .right-logo {
+        width: 100px; /* Adjust as needed */
         height: auto;
         margin: 0 10px; /* Reduced margin to move it closer to the center */
         transform: translateX(-10px); /* Moves the logo 10px to the left */
