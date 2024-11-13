@@ -299,7 +299,7 @@
         width: 100px; /* Adjust as needed */
         height: auto;
         margin: 0 8px; /* Reduced margin to move it closer to the center */
-        transform: translateX(-30px); /* Moves the logo 10px to the left */
+        transform: translateX(-33px); /* Moves the logo 10px to the left */
     }
     
     .logo {
