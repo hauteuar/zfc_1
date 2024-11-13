@@ -12,7 +12,9 @@
     margin: 10px; /* Add space between the cards */
     box-sizing: border-box; /* Ensure padding and borders are included in width */
 }
-
+.services-heading {
+    left: 50%;
+}
 .service-card::before {
     content: '';
     position: absolute;
@@ -68,10 +70,37 @@
     color: #d93232;
 }
 
+@media (max-width: 1200px) {
+    .service-card {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .service-description {
+        font-size: 1.1rem;
+    }
+
+    .service-title {
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .service-card {
         width: 85%;
         margin: 20px auto; /* Center and add margin */
+    }
+    .service-card {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .service-description {
+        font-size: 1.1rem;
+    }
+
+    .service-title {
+        font-size: 1.6rem;
     }
 }
 

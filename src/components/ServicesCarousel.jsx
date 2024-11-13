@@ -113,22 +113,18 @@ const ServicesCarousel = () => {
     disableOnInteraction: false,
   }}
   breakpoints={{
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    320: {
+      slidesPerView: 1, // Show 1 slide on very small screens
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1, // Show 1 slide on mobile screens
     },
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    1024: {
+      slidesPerView: 2, // Show 2 slides on tablets
     },
-    500: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
+    1210: {
+      slidesPerView: 3, // Show 3 slides on large screens
+    },  
   }}
   className="services-carousel"
 >
